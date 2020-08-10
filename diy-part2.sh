@@ -23,6 +23,10 @@ mv openwrt-packages/ package/kenzok8-package/
 git clone https://github.com/kenzok8/small 
 mv small/ package/small/
 mv package/small/chinadns-ng/ tools/ng2
+#docker
+git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
+mv xiaoqingfeng/docker-ce/ package/
+mv xiaoqingfeng/luci-app-dockerman/ package/
 #vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git 
 git clone https://github.com/jerrykuku/luci-app-vssr.git 

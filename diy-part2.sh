@@ -53,8 +53,8 @@ mv feeds/lienol/package/chinadns-ng/ tools/ng
 git clone https://github.com/destan19/OpenAppFilter.git
 mv OpenAppFilter/ package/
 #iptv
-git clone https://github.com/riverscn/openwrt-iptvhelper.git
-mv openwrt-iptvhelper/ package/
+#git clone https://github.com/riverscn/openwrt-iptvhelper.git
+#mv openwrt-iptvhelper/ package/
 #vssr-plus
 ##git clone https://github.com/liuwenwv/luci-app-vssr-plus.git package/luci-app-vssr-plus
 #git clone https://github.com/Leo-Jo-My/diy.git package/my

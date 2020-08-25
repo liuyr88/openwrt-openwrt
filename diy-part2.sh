@@ -19,10 +19,15 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 #kenzok8
 git clone https://github.com/kenzok8/openwrt-packages 
 mv openwrt-packages/luci-app-ssr-plus/ tools/ssr
+mv openwrt-packages/luci-app-smartdns/ tools/luci-app-smartdns
+mv openwrt-packages/smartdns/ tools/smartdns
 mv openwrt-packages/ package/kenzok8-package/
 git clone https://github.com/kenzok8/small 
 mv small/ package/small/
 mv package/small/chinadns-ng/ tools/ng2
+#smartdns
+git clone https://github.com/pymumu/openwrt-smartdns.git package/smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 #docker
 git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
 mv xiaoqingfeng/docker-ce/ package/

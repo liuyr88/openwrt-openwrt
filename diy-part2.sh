@@ -26,8 +26,10 @@ git clone https://github.com/kenzok8/small
 mv small/ package/small/
 mv package/small/chinadns-ng/ tools/ng2
 #smartdns
-git clone https://github.com/pymumu/openwrt-smartdns.git package/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/pymumu/openwrt-smartdns.git 
+mv openwrt-smartdns/ package/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git 
+mv luci-app-smartdns/ package/
 #docker
 git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
 mv xiaoqingfeng/docker-ce/ package/

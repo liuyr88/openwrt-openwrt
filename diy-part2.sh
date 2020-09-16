@@ -31,12 +31,12 @@ mv openwrt-smartdns/ package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git 
 mv luci-app-smartdns/ package/
 #docker
-#git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
-#mv xiaoqingfeng/docker-ce/ package/
-#mv xiaoqingfeng/luci-app-dockerman/ package/
+git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
+mv xiaoqingfeng/docker-ce/ package/
+mv xiaoqingfeng/luci-app-dockerman/ package/
 #端口转发
-#mv xiaoqingfeng/homeredirect/ package/
-#mv xiaoqingfeng/luci-app-homeredirect package/
+mv xiaoqingfeng/homeredirect/ package/
+mv xiaoqingfeng/luci-app-homeredirect package/
 #vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git 
 git clone https://github.com/jerrykuku/luci-app-vssr.git 

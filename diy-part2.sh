@@ -17,31 +17,31 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 #rm -rf feeds/lienol/package/chinadns-ng
 #mv feeds/lienol/package/chinadns-ng package/cdns
 #kenzok8
-git clone https://github.com/kenzok8/openwrt-packages 
-mv openwrt-packages/luci-app-ssr-plus/ tools/ssr
-mv openwrt-packages/luci-app-smartdns/ tools/luci-app-smartdns
-mv openwrt-packages/smartdns/ tools/smartdns
-mv openwrt-packages/ package/kenzok8-package/
-git clone https://github.com/kenzok8/small 
-mv small/ package/small/
-mv package/small/chinadns-ng/ tools/ng2
+#git clone https://github.com/kenzok8/openwrt-packages 
+#mv openwrt-packages/luci-app-ssr-plus/ tools/ssr
+#mv openwrt-packages/luci-app-smartdns/ tools/luci-app-smartdns
+#mv openwrt-packages/smartdns/ tools/smartdns
+#mv openwrt-packages/ package/kenzok8-package/
+#git clone https://github.com/kenzok8/small 
+#mv small/ package/small/
+#mv package/small/chinadns-ng/ tools/ng2
 #smartdns
-git clone https://github.com/pymumu/openwrt-smartdns.git 
-mv openwrt-smartdns/ package/smartdns
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git 
-mv luci-app-smartdns/ package/
+#git clone https://github.com/pymumu/openwrt-smartdns.git 
+#mv openwrt-smartdns/ package/smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git 
+#mv luci-app-smartdns/ package/
 #docker
-git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
-mv xiaoqingfeng/docker-ce/ package/
-mv xiaoqingfeng/luci-app-dockerman/ package/
+#git clone https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng.git xiaoqingfeng/
+#mv xiaoqingfeng/docker-ce/ package/
+#mv xiaoqingfeng/luci-app-dockerman/ package/
 #端口转发
-mv xiaoqingfeng/homeredirect/ package/
-mv xiaoqingfeng/luci-app-homeredirect package/
+#mv xiaoqingfeng/homeredirect/ package/
+#mv xiaoqingfeng/luci-app-homeredirect package/
 #vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git 
-git clone https://github.com/jerrykuku/luci-app-vssr.git 
-mv luci-app-vssr/ package/
-mv lua-maxminddb/ package/
+#git clone https://github.com/jerrykuku/lua-maxminddb.git 
+#git clone https://github.com/jerrykuku/luci-app-vssr.git 
+#mv luci-app-vssr/ package/
+#mv lua-maxminddb/ package/
 #jd
 git clone https://github.com/jerrykuku/node-request.git
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git  
@@ -54,14 +54,14 @@ mv luci-app-jd-dailybonus/ package/
 #chinadns-ng
 #git clone https://github.com/liuyr88/luci-app-chinadns-ng.git
 #mv luci-app-chinadns-ng/ package/
-git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
-mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/
-mv feeds-xiaoqingfeng/chinadns-ng/ package/
-mv feeds/lienol/package/chinadns-ng/ tools/ng
-#rm -rf /feeds/lienol/package/chinadns-ng 
+#git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
+#mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/
+#mv feeds-xiaoqingfeng/chinadns-ng/ package/
+#mv feeds/lienol/package/chinadns-ng/ tools/ng
+##rm -rf /feeds/lienol/package/chinadns-ng 
 #过滤
-git clone https://github.com/destan19/OpenAppFilter.git
-mv OpenAppFilter/ package/
+#git clone https://github.com/destan19/OpenAppFilter.git
+#mv OpenAppFilter/ package/
 #iptv
 #git clone https://github.com/riverscn/openwrt-iptvhelper.git
 #mv openwrt-iptvhelper/ package/

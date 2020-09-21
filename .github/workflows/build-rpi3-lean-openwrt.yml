@@ -36,7 +36,7 @@ env:
   UPLOAD_SQUASHFS_IMAGES: true
   UPLOAD_ROOTFS: true
   UPLOAD_WETRANSFER: false
-  UPLOAD_COWTRANSFER:false
+  UPLOAD_COWTRANSFER: false
   TZ: Asia/Shanghai
 
 jobs:

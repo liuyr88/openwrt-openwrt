@@ -72,9 +72,9 @@ jobs:
       run: |
         [ -e files ] && mv files $OPENWRTROOT/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRTROOT/.config
-        chmod +x $DIY_SH
+        chmod +x diy-part2.sh
         cd $OPENWRTROOT
-        ../$DIY_SH
+        ../diy-part2.sh
     - name: SSH Connection To Actions
       uses: P3TERX/debugger-action@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')

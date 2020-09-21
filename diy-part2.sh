@@ -81,7 +81,7 @@ mv xiaoqingfeng/homeredirect/ package/
 mv xiaoqingfeng/luci-app-homeredirect package/
 
 #luci-theme-infinityfreedom
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/
+#git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/
 
 #chinadns-ng
 #git clone https://github.com/liuyr88/luci-app-chinadns-ng.git

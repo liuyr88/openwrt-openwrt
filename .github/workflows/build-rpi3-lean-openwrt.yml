@@ -16,25 +16,25 @@ on:
     branches:
       - main
     paths:
-      - 'config/rpi3-lede-openwrt.config'
+      - 'config/rpi3-lean-openwrt.config'
 #  schedule:
-#   - cron: 0 18 * * *
+#    - cron: 0 18 * * *
   watch:
     types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: config/rpi3-lede-openwrt.config
+  CONFIG_FILE: config/rpi3-lean-openwrt.config
   DEVICE: openwrt-bcm27xx-bcm2710-rpi-3
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
-  IPV6MOD_IN_FIRMWARE: false
+  IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: false
   UPLOAD_EXT4_IMAGES: false
   UPLOAD_SQUASHFS_IMAGES: true
-  UPLOAD_ROOTFS: true
+  UPLOAD_ROOTFS: false
   UPLOAD_WETRANSFER: false
   UPLOAD_COWTRANSFER: false
   TZ: Asia/Shanghai
@@ -62,22 +62,26 @@ jobs:
       run: |
         df -hT $PWD
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+    
     - name: Update Feeds
       run: |
         cd openwrt
         echo "::set-env name=OPENWRTROOT::$PWD"
         ./scripts/feeds update -a
+    
     - name: Install Feeds
       run: |
         cd $OPENWRTROOT
         ./scripts/feeds install -a
+    
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        $GITHUB_WORKSPACE/$DIY_P2_SH    
+    
     - name: SSH Connection To Actions
       uses: P3TERX/debugger-action@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')

@@ -18,11 +18,11 @@ on:
     branches:
       - main
     paths:
-      - 'config/gdock-openwrt.config'
+      - 'config/gdock-lean-openwrt.config'
 #  schedule:
 #    - cron: 0 17 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede

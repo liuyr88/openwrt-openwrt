@@ -20,9 +20,10 @@ on:
     paths:
       - 'config/x86-64-openwrt.config'
 #  schedule:
-#    - cron: 0 17 * * 5
-#  watch:
-#    types: started
+#    - cron: 0 18 * * *
+  watch:
+    types: started
+
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede

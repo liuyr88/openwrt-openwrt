@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - 'config/rpi3-lede-openwrt.config
+      - 'config/rpi3-lede-openwrt.config'
 #  schedule:
 #    - cron: 0 18 * * 5
   watch:

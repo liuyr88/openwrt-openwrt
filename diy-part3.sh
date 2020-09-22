@@ -17,6 +17,9 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 #git clone https://github.com/Lienol/openwrt-package.git package/Lienol-package
 #rm -rf feeds/lienol/package/chinadns-ng
 #mv feeds/lienol/package/chinadns-ng package/cdns
+#
+git clone https://github.com/fw876/helloworld package/helloworld
+git clone https://github.com/Lienol/openwrt-package package/Lienol
 #kenzok8
 git clone https://github.com/kenzok8/openwrt-packages 
 mv openwrt-packages/luci-app-ssr-plus/ tools/ssr
@@ -58,7 +61,7 @@ mv luci-app-jd-dailybonus/ package/
 git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
 mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/
 mv feeds-xiaoqingfeng/chinadns-ng/ package/
-mv feeds/lienol/package/chinadns-ng/ tools/ng
+mv package/Lienol/package/chinadns-ng/ tools/ng
 #rm -rf /feeds/lienol/package/chinadns-ng 
 #过滤
 git clone https://github.com/destan19/OpenAppFilter.git

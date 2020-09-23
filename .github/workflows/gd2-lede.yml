@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - 'config/gdock-lean-openwrt.config'
+      - 'config/lede-lede-gd2.config'
 #  schedule:
 #    - cron: 0 18 * * 5
 #  watch:
@@ -28,7 +28,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/gdock-lean-openwrt.config
+  CONFIG_FILE: config/config/lede-lede-gd2.configg
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   DIY_P3_SH: diy-part3.sh
@@ -85,9 +85,9 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_P2_SH
+        chmod +x $DIY_P3_SH
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        $GITHUB_WORKSPACE/$DIY_P3_SH
 
     - name: SSH connection to Actions
       uses: P3TERX/debugger-action@main

@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - 'config/lede-lede-gd2.config'
+      - 'config/gdock-lean-openwrt.config'
 #  schedule:
 #    - cron: 0 18 * * 5
   watch:
@@ -28,7 +28,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/lede-lede-gd2.config
+  CONFIG_FILE: config/gdock-lean-openwrt.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false

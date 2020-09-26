@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/x86_64-openwrt.config
   DEVICE: openwrt-x86-64-generic
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part3.sh
+  DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
   IPV6MOD_IN_FIRMWARE: false
   KMODS_IN_FIRMWARE: true
@@ -72,9 +72,9 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_P3_SH
+        chmod +x $DIY_P2_SH
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P3_SH
+        $GITHUB_WORKSPACE/$DIY_P2_SH
     - name: SSH Connection To Actions
       uses: P3TERX/debugger-action@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')

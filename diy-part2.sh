@@ -38,10 +38,10 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 #mv xiaoqingfeng/homeredirect/ package/
 #mv xiaoqingfeng/luci-app-homeredirect package/
 #vssr
-#git clone https://github.com/jerrykuku/lua-maxminddb.git 
-#git clone https://github.com/jerrykuku/luci-app-vssr.git 
-#mv luci-app-vssr/ package/
-#mv lua-maxminddb/ package/
+git clone https://github.com/jerrykuku/lua-maxminddb.git 
+git clone https://github.com/jerrykuku/luci-app-vssr.git 
+mv luci-app-vssr/ package/
+mv lua-maxminddb/ package/
 #jd
 #git clone https://github.com/jerrykuku/node-request.git
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git  

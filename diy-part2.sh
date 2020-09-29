@@ -86,9 +86,9 @@ mv xiaoqingfeng/luci-app-homeredirect package/
 #chinadns-ng
 #git clone https://github.com/liuyr88/luci-app-chinadns-ng.git
 #mv luci-app-chinadns-ng/ package/
-git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
-mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/
-mv feeds-xiaoqingfeng/chinadns-ng/ package/
+#git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
+#mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/
+#mv feeds-xiaoqingfeng/chinadns-ng/ package/
 #mv feeds/lienol/package/chinadns-ng/ tools/ng
 
 #!/bin/bash
@@ -179,7 +179,13 @@ git clone --depth=1 https://github.com/bao3/luci-udptools
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 popd
 
+#chinadns-ng
+#git clone https://github.com/liuyr88/luci-app-chinadns-ng.git
+#mv luci-app-chinadns-ng/ package/
 mv package/community/openwrt-package/package/chinadns-ng/ tools/ng
+git clone https://github.com/liuyr88/feeds-xiaoqingfeng.git
+mv feeds-xiaoqingfeng/luci-app-chinadns-ng/ package/community/openwrt-package/package/
+mv feeds-xiaoqingfeng/chinadns-ng/ package/community/openwrt-package/package/
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files

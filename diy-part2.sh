@@ -116,7 +116,7 @@ pushd package/community
 
 # Add Lienol's Packages
 git clone --depth=1 https://github.com/Lienol/openwrt-package
-mv package/community/openwrt-package/package/chinadns-ng/ tools/ng
+#mv package/community/openwrt-package/package/chinadns-ng/ tools/ng
 
 # Add mentohust & luci-app-mentohust.
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
@@ -178,6 +178,8 @@ git clone --depth=1 https://github.com/bao3/luci-udptools
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 popd
+
+mv package/community/openwrt-package/package/chinadns-ng/ tools/ng
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files

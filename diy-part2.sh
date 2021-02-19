@@ -21,9 +21,9 @@ mv lua-maxminddb/ package/
 
 
 # Add luci-app-ssr-plus
-#pushd package/lean
-#git clone --depth=1 https://github.com/fw876/helloworld
-#popd
+pushd package/lean
+git clone --depth=1 https://github.com/fw876/helloworld
+popd
 
 # Clone community packages to package/community
 mkdir package/community

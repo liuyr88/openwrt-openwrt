@@ -21,9 +21,9 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 
 
 # Add luci-app-ssr-plus
-#pushd package/lean
-#git clone --depth=1 https://github.com/fw876/helloworld
-#popd
+pushd package/lean
+git clone --depth=1 https://github.com/fw876/helloworld
+popd
 
 # Clone community packages to package/community
 mkdir package/community

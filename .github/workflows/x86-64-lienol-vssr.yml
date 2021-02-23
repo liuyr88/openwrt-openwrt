@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86-64-lienol-ssr
+name: x86-64-lienol-vssr
 
 on:
   repository_dispatch:

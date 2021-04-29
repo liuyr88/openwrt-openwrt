@@ -48,8 +48,8 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 
 
 # Add smartdns
-svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
+#svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
 
 popd
 

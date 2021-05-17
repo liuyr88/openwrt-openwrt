@@ -31,11 +31,11 @@ mv luci-app-smartdns/ package/
 #popd
 
 # Clone community packages to package/community
-mkdir package/community
-pushd package/community
+#mkdir package/community
+#pushd package/community
 
 # Add OpenClash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+#git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
 
 # Add luci-app-adguardhome
@@ -43,14 +43,14 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 #svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
 
 # Add luci-app-jd-dailybonus
-git clone --depth=1 https://github.com/jerrykuku/node-request
-git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+#git clone --depth=1 https://github.com/jerrykuku/node-request
+#git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 
 
 # Add smartdns
 #svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
 
-popd
+#popd
 
 

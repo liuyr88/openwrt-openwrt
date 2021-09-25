@@ -26,7 +26,7 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 mv luci-app-smartdns/ package/
 
 #UnblockNeteaseMusicGorr 报错
-cp -r ~/lede/staging_dir/host/bin/upx ~/openwrt/staging_dir/host/bin/upx
+cp -r ~/usr/bin/upx ~/openwrt/staging_dir/host/bin/upx
 
 # Add luci-app-ssr-plus
 #pushd package/lean

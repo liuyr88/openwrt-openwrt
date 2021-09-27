@@ -8,7 +8,7 @@ nw#
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: lede17-ros
+name: openwrt-ros
 
 on:
   repository_dispatch:

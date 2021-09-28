@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: lede17-rpi3
+name: openwrt1907-rpi3
 
 on:
   repository_dispatch:
@@ -18,14 +18,14 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: 0 16 * * 4
+  schedule:
+    - cron: 0 16 * * 4
   watch:
     types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: 19.07
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/rpi3.config
   DIY_P1_SH: diy-part1.sh

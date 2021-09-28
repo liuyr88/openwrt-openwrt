@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: lede17-x86
+name: openwrt1907-x86
 
 on:
   repository_dispatch:
@@ -18,14 +18,14 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: 0 17 * * 4
+  schedule:
+    - cron: 0 17 * * 4
   watch:
     types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: 19.07
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/x86.config
   DIY_P1_SH: diy-part1.sh

@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: openwrt1907-rpi3
+name: openwrt2203-rpi3
 
 on:
   repository_dispatch:

@@ -19,3 +19,6 @@ sed -i 's/192.168.1.1/192.168.50.3/g' package/base-files/files/bin/config_genera
 #mv luci-app-vssr/ package/
 #mv lua-maxminddb/ package/
 #git clone https://github.com/kenzok78/small-package
+cd openwrt
+mkdir package/themes
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/themes/luci-theme-argon

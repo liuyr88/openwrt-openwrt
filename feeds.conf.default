@@ -3,5 +3,6 @@ src-git packages https://git.openwrt.org/feed/packages.git;openwrt-23.05
 src-git luci https://git.openwrt.org/project/luci.git;openwrt-23.05
 src-git routing https://git.openwrt.org/feed/routing.git;openwrt-23.05
 src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-23.05
-src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git
+#src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git
+#src-git passwall https://github.com/xiaorouji/openwrt-passwall.git
+src-git small https://github.com/kenzok78/small-package
